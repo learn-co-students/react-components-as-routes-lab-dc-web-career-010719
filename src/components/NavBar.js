@@ -3,8 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
-      {/*{code here}*/}
+    <div className="navbar">
+      <NavLink exact to="/" activeStyle={{fontWeight: "bold"}}>Home</NavLink>
+      <NavLink to="/movies" activeStyle={{fontWeight: "bold"}}>Movies</NavLink>
+      <NavLink to="/directors" activeStyle={{fontWeight: "bold"}}>Directors</NavLink>
+      <NavLink to="/actors" activeStyle={{fontWeight: "bold"}}>Actors</NavLink>
     </div>
   );
 };
